@@ -1,0 +1,45 @@
+{
+  "version": "2.0",
+  "name": "FirstTask",
+  "id": "fd3987fa-b307-41a3-a483-c960dee62435",
+  "databaseType": "SqlServer",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ],
+    "shadowDatabase": {
+      "connectionProvider": {
+        "type": "UsernamePassword",
+        "url": "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_shadow;encrypt=false;integratedSecurity=true"
+      },
+      "displayName": "Shadow"
+    },
+    "targetDatabases": [
+      {
+        "connectionProvider": {
+          "type": "UsernamePassword",
+          "url": "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_prod;encrypt=false;integratedSecurity=true"
+        }
+      }
+    ],
+    "generateUndoScripts": true
+  },
+  "schemas": [],
+  "capabilities": {
+    "comparison": {
+      "options": {}
+    },
+    "staticData": {
+      "configuredTables": [
+        {
+          "schema": "dbo",
+          "table": "test"
+        }
+      ],
+      "options": {}
+    }
+  }
+}
