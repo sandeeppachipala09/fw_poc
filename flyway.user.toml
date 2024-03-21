@@ -1,0 +1,3 @@
+[environments.development]
+url = "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_dev;encrypt=false;integratedSecurity=true"
+displayName = "Development database"
