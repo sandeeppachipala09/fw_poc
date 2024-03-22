@@ -57,3 +57,10 @@ jobs:
           flyway-dev take -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula | flyway-dev generate -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula --outputFolder=$outputFolderPath 
 
           flyway migrate -configFiles="C:\flyway\FirstTask\flyway.toml,C:\flyway\FirstTask\flyway.user.toml" -workingDirectory="C:\flyway\FirstTask" -environment=Prod
+          
+      - name: commit and push migration files
+        run: |  
+          git config --global user.name 'sandeep pachipala'
+          git config --global user.email 'sandeep.pachipala@gmail.com'
+          git commit -am "Automated report"
+          git push
