@@ -1,0 +1,14 @@
+﻿SET NUMERIC_ROUNDABORT OFF
+GO
+SET ANSI_PADDING, ANSI_WARNINGS, CONCAT_NULL_YIELDS_NULL, ARITHABORT, QUOTED_IDENTIFIER, ANSI_NULLS ON
+GO
+PRINT N'Creating [dbo].[test2]'
+GO
+CREATE TABLE [dbo].[test2]
+(
+[id] [int] NULL,
+[Fname] [varchar] (20) NULL,
+[Lname] [varchar] (30) NULL
+)
+GO
+
