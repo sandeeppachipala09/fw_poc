@@ -1,0 +1,114 @@
+{
+  "individualResults": [
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T00:44:38.825329",
+      "operation": "changes",
+      "exception": "Migration V020_20240320223144__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0001\nError Code : 213\nMessage    : Column name or number of supplied values does not match table definition.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql)\nLine       : 4\nStatement  : Insert into test\r\nselect 1,\u0027sam\u0027,getdate(),1,2,3\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T00:46:00.444435100",
+      "operation": "changes",
+      "exception": "Migration V020_20240320223144__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0001\nError Code : 213\nMessage    : Column name or number of supplied values does not match table definition.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql)\nLine       : 4\nStatement  : Insert into test\r\nselect 1,\u0027sam\u0027,getdate(),1,2,3\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T01:33:51.075471",
+      "operation": "changes",
+      "exception": "Migration V024_20240325233231__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0002\nError Code : 208\nMessage    : Invalid object name \u0027dbo.test_proc\u0027.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql)\nLine       : 7\nStatement  : ALTER procedure [dbo].[test_proc]\r\nas\r\nselect * from test\r\nGo;\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T09:15:50.802920100",
+      "operation": "changes",
+      "exception": "Migration V024_20240325233231__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0002\nError Code : 208\nMessage    : Invalid object name \u0027dbo.test_proc\u0027.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql)\nLine       : 7\nStatement  : ALTER procedure [dbo].[test_proc]\r\nas\r\nselect * from test\r\nGo;\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T09:16:41.861426300",
+      "operation": "changes",
+      "exception": "Migration V024_20240325233231__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0002\nError Code : 208\nMessage    : Invalid object name \u0027dbo.test_proc\u0027.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql)\nLine       : 7\nStatement  : ALTER procedure [dbo].[test_proc]\r\nas\r\nselect * from test\r\nGo;\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T09:21:30.501009200",
+      "operation": "changes",
+      "exception": "Migration V020_20240320223144__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0001\nError Code : 213\nMessage    : Column name or number of supplied values does not match table definition.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql)\nLine       : 4\nStatement  : Insert into test\r\nselect 1,\u0027sam\u0027,getdate(),1,2,3\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T09:22:01.170937400",
+      "operation": "changes",
+      "exception": "Migration V024_20240325233231__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0002\nError Code : 208\nMessage    : Invalid object name \u0027dbo.test_proc\u0027.\nLocation   : C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql)\nLine       : 7\nStatement  : ALTER procedure [dbo].[test_proc]\r\nas\r\nselect * from test\r\nGo;\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T11:14:11.284625300",
+      "operation": "changes",
+      "exception": "Unable to read C:\\flyway\\FirstTask\\my_snapshot from disk",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T11:48:42.734566400",
+      "operation": "changes",
+      "exception": "Unable to read C:\\flyway\\FirstTask\\my_snapshot from disk",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T11:50:52.644447",
+      "operation": "changes",
+      "exception": "Migration V020_20240320223144__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0001\nError Code : 213\nMessage    : Column name or number of supplied values does not match table definition.\nLocation   : migrations\\V020_20240320223144__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql)\nLine       : 4\nStatement  : Insert into test\r\nselect 1,\u0027sam\u0027,getdate(),1,2,3\n",
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": null,
+      "onlyInTarget": null,
+      "differences": null,
+      "database": null,
+      "timestamp": "2024-03-27T11:59:36.808821500",
+      "operation": "changes",
+      "exception": "Migration V020_20240320223144__spachipala.sql failed\n----------------------------------------------------\nSQL State  : S0001\nError Code : 213\nMessage    : Column name or number of supplied values does not match table definition.\nLocation   : migrations\\V020_20240320223144__spachipala.sql (C:\\flyway\\FirstTask\\migrations\\V020_20240320223144__spachipala.sql)\nLine       : 4\nStatement  : Insert into test\r\nselect 1,\u0027sam\u0027,getdate(),1,2,3\n",
+      "licenseFailed": false
+    }
+  ]
+}
