@@ -4,6 +4,6 @@ SET ANSI_NULLS ON
 GO
 CREATE procedure [dbo].[test_proc]
 as
-select * from test
+select colg from test
 Go;
 GO
