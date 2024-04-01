@@ -1,0 +1,46 @@
+name: Test Flow
+  
+on:
+  pull_request_review:
+    types: [submitted]
+
+  workflow_dispatch:
+ 
+ 
+jobs:
+  Branch_to_push:
+    runs-on: self-hosted
+    if: github.event.review.state == 'approved'
+    env:
+      branch_name: ${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+        with:
+          ref: 'refs/heads/${branch_name}'
+
+      - name: generate migration files
+        shell: pwsh 
+        run: |
+          $basePath = "C:\flyway\FirstTask"
+
+          # Define variables for paths
+          $flywayTomlPath = Join-Path $basePath "flyway.toml"
+          $schemaDeltasPath = Join-Path $basePath "schemaDeltas.zip"
+          $deploymentDeltasPath = Join-Path $basePath "deploymentDeltas.zip"
+          $outputFolderPath = Join-Path $basePath "migrations"
+
+          $schemaDiffs = flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=dev -a $schemaDeltasPath --output json | ConvertFrom-Json
+          echo $schemaDiffs.differences.id | flyway-dev apply -p $flywayTomlPath -a $schemaDeltasPath --verbose --i-agree-to-the-eula
+          flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=Migrations -a $deploymentDeltasPath
+          flyway-dev take -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula | flyway-dev generate -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula --outputFolder=$outputFolderPath
+
+
+      - name: push the changes back
+        shell: pwsh
+        run: |
+         git pull origin ${branch_name}
+         git add .
+         git commit -m "Adding new migration files"
+         git push origin HEAD:$branch
