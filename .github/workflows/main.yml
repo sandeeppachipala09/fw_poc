@@ -21,7 +21,7 @@ jobs:
         #  ref: 'refs/heads/${branch_name}'
 
       - name: generate migration files
-        shell: pwsh 
+        shell: powershell 
         run: |
           branch_name
           $basePath = "C:\flyway\FirstTask"
@@ -39,7 +39,7 @@ jobs:
 
 
       - name: push the changes back
-        shell: pwsh
+        shell: powershell
         run: |
          git pull
          git add .
