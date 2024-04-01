@@ -11,10 +11,8 @@ jobs:
       - name: condition 1
         if: runner.os == 'Windows'
         run: |
-          echo "The operating system on the runner is $env:RUNNER_OS."
-          Get-Content $env:GITHUB_EVENT_PATH | ConvertFrom-Json | Select *
-          #echo "The Head Branch is ${{ GITHUB_HEAD_REF}}."
-          #echo "The Base Branch is ${{ GITHUB_BASE_REF }}."
+          $label = Get-Content $env:GITHUB_EVENT_PATH | ConvertFrom-Json | Select *
+          Write-Host "$label"
           
       - name: condition 2
         if: runner.os != 'Windows'
