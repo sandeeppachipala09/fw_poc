@@ -23,7 +23,7 @@ jobs:
       - name: generate migration files
         shell: powershell 
         run: |
-          branch_name
+          #branch_name
           $basePath = "C:\flyway\FirstTask"
 
           # Define variables for paths
