@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "The operating system on the runner is $env:RUNNER_OS."
           echo "The Head Branch is $env:GITHUB_HEAD_REF."
-          echo "The Base Branch is $env:GITHUB_HEAD_REF."
+          echo "The Base Branch is $env:GITHUB_BASE_REF."
           
       - name: condition 2
         if: runner.os != 'Windows'
