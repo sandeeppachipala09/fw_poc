@@ -1,6 +1,6 @@
-on: 
-  pull_request_review:
-    types: [submitted]
+on:
+  pull_request:
+    types: [review_requested]
   
   workflow_dispatch:
 
