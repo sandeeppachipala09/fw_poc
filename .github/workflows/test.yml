@@ -1,4 +1,8 @@
-on: workflow_dispatch
+on: 
+  pull_request_review:
+    types: [submitted]
+  
+  workflow_dispatch:
 
 jobs:
   if-Windows-else:
@@ -6,7 +10,9 @@ jobs:
     steps:
       - name: condition 1
         if: runner.os == 'Windows'
-        run: echo "The operating system on the runner is $env:RUNNER_OS."
+        run: |
+          echo "The operating system on the runner is $env:RUNNER_OS."
+          echo "The operating system on the runner is $env:GITHUB_HEAD_REF."
       - name: condition 2
         if: runner.os != 'Windows'
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
