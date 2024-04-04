@@ -1,7 +1,9 @@
 name: Test Flow
   
 on:
-    workflow_dispatch:
+  pull_request:
+    types: [review_requested]
+  workflow_dispatch:
   
 jobs:
   Branch_to_push:
