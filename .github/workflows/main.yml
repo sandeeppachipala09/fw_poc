@@ -48,4 +48,4 @@ jobs:
          git branch
          git add .
          git commit -m "Adding new migration files"
-         git push origin HEAD:${{ env.branch_name }}
+         git push
