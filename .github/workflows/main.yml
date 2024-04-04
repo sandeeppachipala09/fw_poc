@@ -25,6 +25,9 @@ jobs:
           #echo "$branchName"
           $branchname = ${{ env.branch_name }}
           git pull origin $branchname
+          git checkout $branchname
+          git branch
+          
           $basePath = "C:\flyway\FirstTask"
 
           # Define variables for paths
@@ -42,6 +45,7 @@ jobs:
       - name: push the changes back
         shell: powershell
         run: |
+         git branch
          git add .
          git commit -m "Adding new migration files"
          git push origin HEAD:${{ env.branch_name }}
