@@ -94,7 +94,7 @@
       </SecurityPolicy>
       <Sequence version="1">
         <Include>True</Include>
-        <Expression>TRUE</Expression>
+        <Expression />
       </Sequence>
       <Service version="1">
         <Include>True</Include>
