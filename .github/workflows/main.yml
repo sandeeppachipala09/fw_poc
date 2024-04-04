@@ -40,7 +40,7 @@ jobs:
           echo $schemaDiffs.differences.id | flyway-dev apply -p $flywayTomlPath -a $schemaDeltasPath --verbose --i-agree-to-the-eula
           flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=Migrations -a $deploymentDeltasPath
           flyway-dev take -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula | flyway-dev generate -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula --outputFolder=$outputFolderPath
-
+          git status
 
       - name: push the changes back
         shell: powershell
