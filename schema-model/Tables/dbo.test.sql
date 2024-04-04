@@ -9,3 +9,5 @@ CREATE TABLE [dbo].[test]
 [colg] [varchar] (20) NULL
 )
 GO
+CREATE NONCLUSTERED INDEX [id_cold1] ON [dbo].[test] ([cold], [cole]) WITH (ONLINE = ON)
+GO
