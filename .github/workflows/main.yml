@@ -21,31 +21,31 @@ jobs:
       - name: generate migration files
         shell: powershell 
         run: |
-          #$branchName = git rev-parse --abbrev-ref HEAD
-          #echo "$branchName"
+          pwd
           $branchname = ${{ env.branch_name }}
           git pull origin $branchname
+          git branch
           git checkout $branchname
           git branch
           
-          $basePath = "C:\flyway\FirstTask"
+          #$basePath = "C:\flyway\FirstTask"
 
           # Define variables for paths
-          $flywayTomlPath = Join-Path $basePath "flyway.toml"
-          $schemaDeltasPath = Join-Path $basePath "schemaDeltas.zip"
-          $deploymentDeltasPath = Join-Path $basePath "deploymentDeltas.zip"
-          $outputFolderPath = Join-Path $basePath "migrations"
+          #$flywayTomlPath = Join-Path $basePath "flyway.toml"
+          #$schemaDeltasPath = Join-Path $basePath "schemaDeltas.zip"
+          #$deploymentDeltasPath = Join-Path $basePath "deploymentDeltas.zip"
+          #$outputFolderPath = Join-Path $basePath "migrations"
 
-          $schemaDiffs = flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=dev -a $schemaDeltasPath --output json | ConvertFrom-Json
-          echo $schemaDiffs.differences.id | flyway-dev apply -p $flywayTomlPath -a $schemaDeltasPath --verbose --i-agree-to-the-eula
-          flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=Migrations -a $deploymentDeltasPath
-          flyway-dev take -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula | flyway-dev generate -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula --outputFolder=$outputFolderPath
-          git status
+          #$schemaDiffs = flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=dev -a $schemaDeltasPath --output json | ConvertFrom-Json
+          #echo $schemaDiffs.differences.id | flyway-dev apply -p $flywayTomlPath -a $schemaDeltasPath --verbose --i-agree-to-the-eula
+          #flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=Migrations -a $deploymentDeltasPath
+          #flyway-dev take -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula | flyway-dev generate -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula --outputFolder=$outputFolderPath
+          #git status
 
       - name: push the changes back
         shell: powershell
         run: |
          git branch
-         git add .
-         git commit -m "Adding new migration files"
-         git push
+         #git add .
+         #git commit -m "Adding new migration files"
+         #git push
