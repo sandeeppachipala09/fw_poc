@@ -4,6 +4,7 @@ CREATE TABLE [dbo].[test1]
 [colb] [varchar] (20) NULL,
 [colc] [int] NULL,
 [cold] [int] NULL,
-[cole] [int] NULL
+[cole] [int] NULL,
+[colf] [int] NULL
 )
 GO
