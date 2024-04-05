@@ -6,6 +6,7 @@ CREATE TABLE [dbo].[test2]
 [address] [varchar] (200) NULL,
 [phonenumber] bigint NULL,
 [AGE] int,
-[Salary] int
+[Salary] int,
+[status] varchar(10)
 )
 GO
