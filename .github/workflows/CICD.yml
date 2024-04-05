@@ -28,10 +28,10 @@ jobs:
       - name: Migrate test DB
         if: ${{ true }}
         run: |
-          $basePath = Get-Location
-          $flywayTomlPath = Join-Path $basePath "flyway.toml"
-          $flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
-          flyway migrate -configFiles=$flywayTomlPath,$flywayUserTomlPath -workingDirectory=$basePath -environment=Test
+          #$basePath = Get-Location
+          #$flywayTomlPath = Join-Path $basePath "flyway.toml"
+          #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
+          flyway migrate -environment=Test
 
 
   prod:
@@ -57,10 +57,10 @@ jobs:
       - name: Migrate Build DB
         if: ${{ true }}
         run: |
-          $basePath = Get-Location
-          $flywayTomlPath = Join-Path $basePath "flyway.toml"
-          $flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
-          flyway migrate -configFiles=$flywayTomlPath,$flywayUserTomlPath -workingDirectory=$basePath -environment=Prod
+          #$basePath = Get-Location
+          #$flywayTomlPath = Join-Path $basePath "flyway.toml"
+          #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
+          flyway migrate -environment=Prod
 
           
       #- name: commit and push migration files
