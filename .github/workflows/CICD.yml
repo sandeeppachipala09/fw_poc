@@ -6,7 +6,7 @@ on:
 env:
  
   FLYWAY_LICENSE_KEY: ${{ secrets.FLYWAY_LICENSE_KEY }} #Repository Secret - Create this within the Projects Settings > Secrects > Actions section
-  ACTIONS_RUNNER_DEBUG: true 
+  ACTIONS_RUNNER_DEBUG: true
  
 jobs:
   
@@ -28,7 +28,10 @@ jobs:
       - name: Migrate test DB
         if: ${{ true }}
         run: |
-          flyway migrate -configFiles="C:\flyway\FirstTask\flyway.toml,C:\flyway\FirstTask\flyway.user.toml" -workingDirectory="C:\flyway\FirstTask" -environment=target2
+          $basePath = Get-Location
+          $flywayTomlPath = Join-Path $basePath "flyway.toml"
+          $flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
+          flyway migrate -configFiles=$flywayTomlPath,$flywayUserTomlPath -workingDirectory=$basePath -environment=Test
 
 
   prod:
@@ -54,7 +57,11 @@ jobs:
       - name: Migrate Build DB
         if: ${{ true }}
         run: |
-          flyway migrate -configFiles="C:\flyway\FirstTask\flyway.toml,C:\flyway\FirstTask\flyway.user.toml" -workingDirectory="C:\flyway\FirstTask" -environment=Prod
+          $basePath = Get-Location
+          $flywayTomlPath = Join-Path $basePath "flyway.toml"
+          $flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
+          flyway migrate -configFiles=$flywayTomlPath,$flywayUserTomlPath -workingDirectory=$basePath -environment=Prod
+
           
       #- name: commit and push migration files
       #  run: |  
