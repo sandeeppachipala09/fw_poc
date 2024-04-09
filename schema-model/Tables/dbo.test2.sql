@@ -9,6 +9,7 @@ CREATE TABLE [dbo].[test2]
 [Salary] int,
 [status] varchar(10),
 [Country] varchar(20),
-[Gender] varchar(15)
+[Gender] varchar(15),
+[Department] varchar(20) 
 )
 GO
