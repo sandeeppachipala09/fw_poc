@@ -38,7 +38,7 @@ jobs:
         run: |
           pwd
           mkdir dev_env
-          cd test
+          cd dev_env
           flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Dev
           cd ..
           
@@ -76,7 +76,7 @@ jobs:
         run: |
           pwd
           mkdir test_env
-          cd test
+          cd test_env
           flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Test
           cd ..
           
