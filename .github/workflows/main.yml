@@ -1,8 +1,10 @@
-name: Test Flow
+name: Generate migration files
   
 on:
-  #pull_request:
-    #types: [review_requested]
+  pull_request:
+    types: [review_requested]
+    paths:
+      - schema-model/**
   workflow_dispatch:
   
 jobs:
@@ -34,8 +36,8 @@ jobs:
           $deploymentDeltasPath = Join-Path $basePath "deploymentDeltas.zip"
           $outputFolderPath = Join-Path $basePath "migrations"
 
-          $schemaDiffs = flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=dev -a $schemaDeltasPath --output json | ConvertFrom-Json
-          flyway-dev apply -p $flywayTomlPath -a $schemaDeltasPath -c $schemaDiffs.differences.id --verbose --i-agree-to-the-eula
+          #$schemaDiffs = flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=dev -a $schemaDeltasPath --output json | ConvertFrom-Json
+          #flyway-dev apply -p $flywayTomlPath -a $schemaDeltasPath -c $schemaDiffs.differences.id --verbose --i-agree-to-the-eula
           flyway-dev diff -p $flywayTomlPath --i-agree-to-the-eula --from=SchemaModel --to=Migrations -a $deploymentDeltasPath
           $changes = flyway-dev take -p $flywayTomlPath -a $deploymentDeltasPath --i-agree-to-the-eula
           flyway-dev generate -p $flywayTomlPath -a $deploymentDeltasPath -c $changes --i-agree-to-the-eula --outputFolder=$outputFolderPath
