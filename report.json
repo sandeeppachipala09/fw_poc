@@ -18447,6 +18447,2345 @@
       "operation": "info",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "onlyInSource": [],
+      "onlyInTarget": [],
+      "differences": [],
+      "database": "sm_core_test",
+      "timestamp": "2024-04-09T23:19:31.957125500",
+      "operation": "changes",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": [],
+      "onlyInTarget": [],
+      "differences": [],
+      "database": "sm_core_test",
+      "timestamp": "2024-04-09T23:21:31.135617300",
+      "operation": "changes",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "results": [
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V009_20240320014909__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V005_20240316231226__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U051_20240404233347__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Views\\dbo.test_view.sql",
+          "violations": [
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 8,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 13,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 19,
+              "description": "Unnecessary quoted identifier [test_view].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Query produces an unknown number of result columns.",
+              "code": "L044"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 10,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 19,
+              "description": "Function name not immediately followed by parenthesis.",
+              "code": "L017"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U026_20240327212125__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V057_20240408142748__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V054_20240405063625__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V023_20240322171911__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V004_20240316213605__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V052_20240405034959__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V022_20240322012408__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V049_20240404224434__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V055_20240405070752__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V008_20240319183526__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V051_20240404233347__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V034_20240402214819__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 19,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U054_20240405063625__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V032_20240402212651__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 19,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U056_20240405073407__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Tables\\dbo.test.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "CREATE TABLE statement without a PRIMARY KEY constraint",
+              "code": "Flyway_L001"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "Table \u0027[dbo].[test]\u0027 has been created, but no \u0027MS_Description\u0027 property added for it in this file",
+              "code": "Flyway_L002"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 14,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 20,
+              "description": "Unnecessary quoted identifier [test].",
+              "code": "L059"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cola].",
+              "code": "L059"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colb].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colc].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cold].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cole].",
+              "code": "L059"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colf].",
+              "code": "L059"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colg].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 27,
+              "description": "Unnecessary quoted identifier [id_cold1].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 41,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 47,
+              "description": "Unnecessary quoted identifier [test].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 55,
+              "description": "Unnecessary quoted identifier [cold].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 63,
+              "description": "Unnecessary quoted identifier [cole].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 89,
+              "description": "Line is too long.",
+              "code": "L016"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V018_20240320193503__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U052_20240405034959__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V010_20240320062842__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V017_20240320191125__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V058_20240408205510__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Tables\\dbo.test1.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "CREATE TABLE statement without a PRIMARY KEY constraint",
+              "code": "Flyway_L001"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "Table \u0027[dbo].[test1]\u0027 has been created, but no \u0027MS_Description\u0027 property added for it in this file",
+              "code": "Flyway_L002"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 14,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 20,
+              "description": "Unnecessary quoted identifier [test1].",
+              "code": "L059"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cola].",
+              "code": "L059"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colb].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colc].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cold].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cole].",
+              "code": "L059"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colf].",
+              "code": "L059"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V025_20240326172450__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 14,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U029_20240328174940__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U004_20240316213605__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V028_20240328012711__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 7,
+              "line_pos": 62,
+              "description": "Commas should be followed by a single whitespace unless followed by a comment.",
+              "code": "L008"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U002_20240313023242__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V027_20240328010030__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U057_20240408142748__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U049_20240404224434__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V053_20240405041058__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U005_20240316231226__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V019_20240320194744__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V016_20240320190859__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Tables\\dbo.test2.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "CREATE TABLE statement without a PRIMARY KEY constraint",
+              "code": "Flyway_L001"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "Table \u0027[dbo].[test2]\u0027 has been created, but no \u0027MS_Description\u0027 property added for it in this file",
+              "code": "Flyway_L002"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 14,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 20,
+              "description": "Unnecessary quoted identifier [test2].",
+              "code": "L059"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [id].",
+              "code": "L059"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Fname].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Lname].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [address].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [phonenumber].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 15,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [AGE].",
+              "code": "L059"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 7,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Salary].",
+              "code": "L059"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 10,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [status].",
+              "code": "L059"
+            },
+            {
+              "line_no": 10,
+              "line_pos": 10,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 11,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 11,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Country].",
+              "code": "L059"
+            },
+            {
+              "line_no": 11,
+              "line_pos": 11,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Gender].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 10,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Department].",
+              "code": "L059"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 14,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 25,
+              "description": "Unnecessary trailing whitespace.",
+              "code": "L001"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U055_20240405070752__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Stored Procedures\\dbo.test_proc.sql",
+          "violations": [
+            {
+              "line_no": 5,
+              "line_pos": 8,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 18,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 24,
+              "description": "Unnecessary quoted identifier [test_proc].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 13,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V007_20240318223715__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V021_20240321205350__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\B001_20240312190368__baseline.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U028_20240328012711__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V002_20240313023242__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V056_20240405073407__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V033_20240402214120__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 19,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V013_20240320184914__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V026_20240327212125__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V006_20240318030844__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V029_20240328174940__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V003_20240313152029__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 21,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U058_20240408205510__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U053_20240405041058__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U003_20240313152029__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2024-04-09T23:21:31.135617300",
+      "operation": "code",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "onlyInSource": [],
+      "onlyInTarget": [],
+      "differences": [],
+      "database": "sm_core_test",
+      "timestamp": "2024-04-09T23:22:21.173399900",
+      "operation": "changes",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "results": [
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V009_20240320014909__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V005_20240316231226__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U051_20240404233347__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Views\\dbo.test_view.sql",
+          "violations": [
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 8,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 13,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 19,
+              "description": "Unnecessary quoted identifier [test_view].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Query produces an unknown number of result columns.",
+              "code": "L044"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 10,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 19,
+              "description": "Function name not immediately followed by parenthesis.",
+              "code": "L017"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U026_20240327212125__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V057_20240408142748__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V054_20240405063625__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V023_20240322171911__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V004_20240316213605__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V052_20240405034959__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V022_20240322012408__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V049_20240404224434__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V055_20240405070752__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V008_20240319183526__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V051_20240404233347__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V034_20240402214819__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 19,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U054_20240405063625__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V032_20240402212651__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 19,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U056_20240405073407__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Tables\\dbo.test.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "CREATE TABLE statement without a PRIMARY KEY constraint",
+              "code": "Flyway_L001"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "Table \u0027[dbo].[test]\u0027 has been created, but no \u0027MS_Description\u0027 property added for it in this file",
+              "code": "Flyway_L002"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 14,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 20,
+              "description": "Unnecessary quoted identifier [test].",
+              "code": "L059"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cola].",
+              "code": "L059"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colb].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colc].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cold].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cole].",
+              "code": "L059"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colf].",
+              "code": "L059"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colg].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 27,
+              "description": "Unnecessary quoted identifier [id_cold1].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 41,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 47,
+              "description": "Unnecessary quoted identifier [test].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 55,
+              "description": "Unnecessary quoted identifier [cold].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 63,
+              "description": "Unnecessary quoted identifier [cole].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 89,
+              "description": "Line is too long.",
+              "code": "L016"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V018_20240320193503__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U052_20240405034959__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V010_20240320062842__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V017_20240320191125__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V058_20240408205510__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Tables\\dbo.test1.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "CREATE TABLE statement without a PRIMARY KEY constraint",
+              "code": "Flyway_L001"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "Table \u0027[dbo].[test1]\u0027 has been created, but no \u0027MS_Description\u0027 property added for it in this file",
+              "code": "Flyway_L002"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 14,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 20,
+              "description": "Unnecessary quoted identifier [test1].",
+              "code": "L059"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cola].",
+              "code": "L059"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colb].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colc].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cold].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [cole].",
+              "code": "L059"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [colf].",
+              "code": "L059"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V025_20240326172450__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 14,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U029_20240328174940__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U004_20240316213605__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V028_20240328012711__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 7,
+              "line_pos": 62,
+              "description": "Commas should be followed by a single whitespace unless followed by a comment.",
+              "code": "L008"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U002_20240313023242__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V027_20240328010030__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U057_20240408142748__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U049_20240404224434__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V053_20240405041058__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V024_20240325233231__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U005_20240316231226__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V019_20240320194744__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V016_20240320190859__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Tables\\dbo.test2.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "CREATE TABLE statement without a PRIMARY KEY constraint",
+              "code": "Flyway_L001"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 1,
+              "description": "Table \u0027[dbo].[test2]\u0027 has been created, but no \u0027MS_Description\u0027 property added for it in this file",
+              "code": "Flyway_L002"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 14,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 1,
+              "line_pos": 20,
+              "description": "Unnecessary quoted identifier [test2].",
+              "code": "L059"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 3,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [id].",
+              "code": "L059"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 4,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Fname].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Lname].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [address].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [phonenumber].",
+              "code": "L059"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 15,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [AGE].",
+              "code": "L059"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 7,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Salary].",
+              "code": "L059"
+            },
+            {
+              "line_no": 9,
+              "line_pos": 10,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [status].",
+              "code": "L059"
+            },
+            {
+              "line_no": 10,
+              "line_pos": 10,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 11,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 11,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Country].",
+              "code": "L059"
+            },
+            {
+              "line_no": 11,
+              "line_pos": 11,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Gender].",
+              "code": "L059"
+            },
+            {
+              "line_no": 12,
+              "line_pos": 10,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Expected 1 indentations, found 0 [compared to line 02]",
+              "code": "L003"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Unnecessary quoted identifier [Department].",
+              "code": "L059"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 14,
+              "description": "Datatypes must be consistently capitalised.",
+              "code": "L063"
+            },
+            {
+              "line_no": 13,
+              "line_pos": 25,
+              "description": "Unnecessary trailing whitespace.",
+              "code": "L001"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U055_20240405070752__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\schema-model\\Stored Procedures\\dbo.test_proc.sql",
+          "violations": [
+            {
+              "line_no": 5,
+              "line_pos": 8,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 18,
+              "description": "Unnecessary quoted identifier [dbo].",
+              "code": "L059"
+            },
+            {
+              "line_no": 5,
+              "line_pos": 24,
+              "description": "Unnecessary quoted identifier [test_proc].",
+              "code": "L059"
+            },
+            {
+              "line_no": 6,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 7,
+              "line_pos": 13,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            },
+            {
+              "line_no": 8,
+              "line_pos": 1,
+              "description": "Keywords must be consistently upper case.",
+              "code": "L010"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V007_20240318223715__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V021_20240321205350__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\B001_20240312190368__baseline.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U028_20240328012711__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V002_20240313023242__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V056_20240405073407__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V033_20240402214120__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 1,
+              "line_pos": 19,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V013_20240320184914__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V026_20240327212125__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V006_20240318030844__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 9,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V029_20240328174940__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 12,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\V003_20240313152029__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 21,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U058_20240408205510__localadminuser.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U053_20240405041058__spachipala.sql",
+          "violations": [
+            {
+              "line_no": 10,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        },
+        {
+          "filepath": "C:\\flyway\\FirstTask\\migrations\\U003_20240313152029__UNDO-spachipala.sql",
+          "violations": [
+            {
+              "line_no": 13,
+              "line_pos": 1,
+              "description": "Files must end with a single trailing newline.",
+              "code": "L009"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2024-04-09T23:22:21.173399900",
+      "operation": "code",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "sql": "-- -\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n-- Flyway Dry Run (2024-04-09 23:22:41)\n-- -\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nUSE [sm_core_test]\nGO\nSET ANSI_NULLS ON\nGO\nUSE [sm_core_test]\nGO\nSET ANSI_NULLS ON\nGO\nUSE [sm_core_test]\nGO\nSET ANSI_NULLS ON\nGO\n\n-- Executing: validate (with callbacks)\n-- ---------------------------------------------------------------------------------------\nUSE [sm_core_test]\nGO\nSET ANSI_NULLS ON\nGO\n\n-- Executing: migrate (with callbacks)\n-- ---------------------------------------------------------------------------------------\nUSE [sm_core_test]\nGO\nSET ANSI_NULLS ON\nGO\nUSE [sm_core_test]\nGO\nSET ANSI_NULLS ON\nGO\n",
+      "timestamp": "2024-04-09T23:22:21.173399900",
+      "operation": "dryrun",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
