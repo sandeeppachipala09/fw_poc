@@ -130,6 +130,10 @@ url = "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_prod;encrypt=false;
 url = "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_test;encrypt=false;integratedSecurity=true"
 displayName = "Test"
 
+[environments.Dev]
+url = "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_dev;encrypt=false;integratedSecurity=true"
+displayName = "Dev"
+
 [environments.Build]
 url = "jdbc:sqlserver://sm-01329-w:1433;databaseName=sm_core_build;encrypt=false;integratedSecurity=true"
 displayName = "Build"
