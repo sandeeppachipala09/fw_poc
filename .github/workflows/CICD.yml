@@ -38,7 +38,7 @@ jobs:
           pwd
           mkdir test
           cd test
-          flyway check -changes -code -dryrun -environment=Test
+          flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Test
           cd ..
           
       - name: Step 3 - Use the Upload Artifact GitHub Action
