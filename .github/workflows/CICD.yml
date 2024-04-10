@@ -32,7 +32,20 @@ jobs:
           #$flywayTomlPath = Join-Path $basePath "flyway.toml"
           #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
           flyway migrate -environment=Test
+
+      - name: archive-build-artifacts
+        run: |
+          pwd
+          mkdir test
+          cd test
           flyway check -changes -code -dryrun -environment=Test
+          cd ..
+          
+      - name: Step 3 - Use the Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v2
+        with: 
+          name: assets-for-download
+          path: test
 
 
   prod:
@@ -62,7 +75,7 @@ jobs:
           #$flywayTomlPath = Join-Path $basePath "flyway.toml"
           #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
           flyway migrate -environment=Prod
-          flyway check -changes -code -dryrun -environment=Test
+          #flyway check -changes -code -dryrun -environment=Test
 
           
       #- name: commit and push migration files
@@ -71,3 +84,4 @@ jobs:
       #    git config --global user.email 'sandeep.pachipala@gmail.com'
       #    git commit -am "Automated report"
       #    git push
+      
