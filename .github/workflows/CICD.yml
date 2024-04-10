@@ -32,6 +32,7 @@ jobs:
           #$flywayTomlPath = Join-Path $basePath "flyway.toml"
           #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
           flyway migrate -environment=Test
+          flyway check -changes -code -dryrun -environment=Test
 
 
   prod:
@@ -61,6 +62,7 @@ jobs:
           #$flywayTomlPath = Join-Path $basePath "flyway.toml"
           #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
           flyway migrate -environment=Prod
+          flyway check -changes -code -dryrun -environment=Test
 
           
       #- name: commit and push migration files
