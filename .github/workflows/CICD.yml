@@ -1,73 +1,106 @@
-name: Example GitHub Pipeline (Self-Hosted)
+name: Deploy
  
 on:
+  pull_request_review:
+    types: [submitted]
+    paths:
+      - migrations/**
   workflow_dispatch:
  
 env:
  
-  FLYWAY_LICENSE_KEY: ${{ secrets.FLYWAY_LICENSE_KEY }} #Repository Secret - Create this within the Projects Settings > Secrects > Actions section
+  FLYWAY_LICENSE_KEY: ${{ secrets.FLYWAY_LICENSE_KEY }} 
   ACTIONS_RUNNER_DEBUG: true
  
 jobs:
   
-  test:
-    name: Deploy Test
+  dev:
+    if: github.event.review.state == 'APPROVED'
+    name: Deploy Dev
     runs-on: self-hosted
-    environment: 'test' 
-    if: ${{ true }} #Set this variable to false to temporarily disable the job
+    environment: 'Dev' 
     env:
-      stage: 'test'
       databaseName: ${{ secrets.databaseName}}
       JDBC: ${{ secrets.JDBC }}
  
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         
-      # Runs the Flyway Migrate against the test database
+      - name: Migrate Dev DB
+        if: ${{ true }}
+        run: |
+          $basePath = Get-Location
+          $flywayTomlPath = Join-Path $basePath "flyway.toml"
+          $flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
+          flyway migrate -configFiles="$flywayTomlPath,$flywayUserTomlPath" -environment=Dev
+
+      - name: archive-dev-artifacts
+        run: |
+          pwd
+          mkdir dev_env
+          cd test
+          flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Dev
+          cd ..
+          
+      - name: Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v4
+        with: 
+          name: assets-for-download-dev
+          path: dev_env
+
+
+
+  test:
+    needs: dev
+    name: Deploy Test
+    runs-on: self-hosted
+    environment: 'test' 
+    if: ${{ true }} 
+    env:
+      databaseName: ${{ secrets.databaseName}}
+      JDBC: ${{ secrets.JDBC }}
+      pauseForCodeReview: true
+ 
+    steps:
+      - uses: actions/checkout@v4
+        
       - name: Migrate test DB
         if: ${{ true }}
         run: |
-          #$basePath = Get-Location
-          #$flywayTomlPath = Join-Path $basePath "flyway.toml"
-          #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
-          flyway migrate -environment=Test
+          $basePath = Get-Location
+          $flywayTomlPath = Join-Path $basePath "flyway.toml"
+          $flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
+          flyway migrate -configFiles="$flywayTomlPath,$flywayUserTomlPath" -environment=Test
 
       - name: archive-build-artifacts
         run: |
           pwd
-          mkdir test
+          mkdir test_env
           cd test
           flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Test
           cd ..
           
-      - name: Step 3 - Use the Upload Artifact GitHub Action
-        uses: actions/upload-artifact@v2
+      - name: Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v4
         with: 
-          name: assets-for-download
-          path: test
+          name: assets-to-download-test
+          path: test_env
 
 
   prod:
     needs: test
     name: Deploy Production
     runs-on: self-hosted
-    environment: 'prod' #Ensure this environment name is setup in the projects Settings>Environment area. Ensuring any reviewers are also configured 
-    if: ${{ true }} #Set this variable to false to temporarily disable the job
+    environment: 'prod' 
+    if: ${{ true }} 
     env:
-      stage: 'Prod'
       databaseName: ${{ secrets.databaseName}}
       JDBC: ${{ secrets.JDBC }}
-      #userName: ${{ secrets.userName }}
-      #password: ${{ secrets.password }}
       pauseForCodeReview: true
  
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         
-      # Runs the Flyway Migrate against the Production database
       - name: Migrate Build DB
         if: ${{ true }}
         run: |
@@ -76,12 +109,3 @@ jobs:
           #$flywayUserTomlPath = Join-Path $basePath "flyway.user.toml"
           flyway migrate -environment=Prod
           #flyway check -changes -code -dryrun -environment=Test
-
-          
-      #- name: commit and push migration files
-      #  run: |  
-      #    git config --global user.name 'sandeep pachipala'
-      #    git config --global user.email 'sandeep.pachipala@gmail.com'
-      #    git commit -am "Automated report"
-      #    git push
-      
