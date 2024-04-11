@@ -13,7 +13,17 @@ jobs:
           Write-Host "$env:GITHUB_EVENT_NAME"
           Write-Host "$env:GITHUB_HEAD_REF"
           pwd
+          pwd
+          mkdir dev_env
+          cd dev_env
           flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Dev
+          cd ..
+          
+      - name: Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v4
+        with: 
+          name: assets-for-download-dev
+          path: dev_env
           
       - name: condition 2
         if: runner.os != 'Windows'
