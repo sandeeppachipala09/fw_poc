@@ -39,7 +39,7 @@ jobs:
           pwd
           mkdir dev_env
           cd dev_env
-          flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Dev
+          flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Dev
           cd ..
           
       - name: Upload Artifact GitHub Action
@@ -77,7 +77,7 @@ jobs:
           pwd
           mkdir test_env
           cd test_env
-          flyway check -changes -code -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -environment=Test
+          flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Test
           cd ..
           
       - name: Upload Artifact GitHub Action
