@@ -12,8 +12,7 @@ jobs:
           Write-Host "$label"
           Write-Host "$env:GITHUB_EVENT_NAME"
           Write-Host "$env:GITHUB_HEAD_REF"
-          #sqlfluff --help
-          echo $env:path
+          sqlfluff --help
           
       - name: condition 2
         if: runner.os != 'Windows'
