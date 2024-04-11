@@ -38,9 +38,11 @@ jobs:
         run: |
           pwd
           mkdir dev_env
-          cd dev_env
           flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Dev
-          cd ..
+          mv report.json .\dev_env\
+          mv report.html .\dev_env\
+          cd dev_env
+          ls
           
       - name: Upload Artifact GitHub Action
         uses: actions/upload-artifact@v4
@@ -74,11 +76,12 @@ jobs:
 
       - name: archive-build-artifacts
         run: |
-          pwd
           mkdir test_env
+          flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Dev
+          mv report.json .\test_env\
+          mv report.html .\test_env\
           cd test_env
-          flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Test
-          cd ..
+          ls
           
       - name: Upload Artifact GitHub Action
         uses: actions/upload-artifact@v4
