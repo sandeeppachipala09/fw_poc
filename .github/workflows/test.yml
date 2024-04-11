@@ -13,6 +13,7 @@ jobs:
           Write-Host "$env:GITHUB_EVENT_NAME"
           Write-Host "$env:GITHUB_HEAD_REF"
           pwd
+          flyway check -code -changes -dryrun -configFiles="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.toml,C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc\flyway.user.toml" -workingDirectory="C:\Users\spachipala\actions-runner\_work\fw_poc\fw_poc" -environment=Dev
           
       - name: condition 2
         if: runner.os != 'Windows'
